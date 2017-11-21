@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./canvas.css">
     <title>canvas</title>
-    <script src="//at.alicdn.com/t/font_481270_gh5236m3j8gds4i.js"></script>
+    <script src="//at.alicdn.com/t/font_481270_220gf4ugbeimgqfr.js"></script>
 </head>
 <body>
 <div class="header">
@@ -16,15 +16,28 @@
         <use xlink:href="#icon-pen"></use>
     </svg>
 
+    <svg id="eraser" class="icon">
+        <use xlink:href="#icon-erase"></use>
+    </svg>
 
+    <svg id="clear" class="icon">
+    <use xlink:href="#icon-clear"></use>
+    </svg>
+
+    <a href="#" id="downloader" download="image.png">
+        <svg id="save" class="icon">
+            <use xlink:href="#icon-save"></use>
+        </svg>
+    </a>
     <ol class="color">
         <li id="red"></li>
         <li id="blue"></li>
         <li id="green"></li>
     </ol>
-    <svg id="eraser" class="icon">
-        <use xlink:href="#icon-erase"></use>
-    </svg>
+    <ul>
+        <li class="bold">粗笔</li>
+        <li class="lighter">细笔</li>
+    </ul>
 </div>
 <canvas id="canvas" width="300px" height="300px">
 

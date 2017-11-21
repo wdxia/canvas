@@ -2,8 +2,18 @@
     margin: 0;
     padding: 0;
 }
+@media(max-width: 400px){
+    #canvas{
+        margin-top: -34px;
+    }
+}
 body{
     position: fixed;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .icon {
     width: 1em; height: 1em;
@@ -11,41 +21,55 @@ body{
     fill: currentColor;
     overflow: hidden;
 }
+.header{
+    height: 60px;
+    background-color: lightblue;
+    position: relative;
+}
+.header svg{
+   display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 60px;
+    margin-top: 14px;
+    margin-left: 20px;
+}
 svg.active{
     fill: red;
 }
 ol{
-    margin-left: 60px;
-    margin-top: -40px;
+    margin-left: 250px;
+    margin-top: -33px;
 }
 ol>li{
     width: 20px;
     height: 20px;
     list-style: none;
     margin: 0 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px; ;
     float: left;
+}
+ul{
+    float: left;
+    margin-left: 380px;
+    list-style: none;
+    margin-top: -10px;
+}
+ul>li{
+
 }
 #eraser{
     margin-top: -4px;
 }
 
-.header svg{
-    margin:10px;
-    width: 2em;
-    height:2em;
-}
+
 .clearfix::after{
     content: "";
     display: block;
     clear: both;
 }
-.header{
-    height: 60px;
-    background-color: lightblue;
-
+#clear{
+    stroke: black;
 }
 #canvas{
     background-color: #dddddd;
