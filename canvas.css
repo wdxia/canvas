@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: fixed;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+svg.active{
+    fill: red;
+}
+ol{
+    margin-left: 60px;
+    margin-top: -40px;
+}
+ol>li{
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    margin: 0 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; ;
+    float: left;
+}
+#eraser{
+    margin-top: -4px;
+}
+
+.header svg{
+    margin:10px;
+    width: 2em;
+    height:2em;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header{
+    height: 60px;
+    background-color: lightblue;
+
+}
+#canvas{
+    background-color: #dddddd;
+}
+#red{
+    background-color: red;
+
+}
+.color > .active{
+    box-shadow: 2px 2px 2px #888888;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
